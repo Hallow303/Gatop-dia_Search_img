@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gatopedia</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/cat.ico') }}">
+</head>
+<body>
+
+  <div class="search-container">
+      <!-- Logo -->
+      <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Gatopedia" class="logo-img">
+
+      <!-- Barra de pesquisa -->
+      <form action="/" method="POST" id="searchForm">
+          <div class="search-bar">
+              <img src="{{ url_for('static', filename='img/google_icon.png') }}" class="icon" alt="icon">
+              <input type="text" name="query" placeholder="Pesquise aqui..." value="{{ query or '' }}">
+          </div>
+      </form>
+
+      {% if message %}
+      <div class="popup-message" id="popupMessage">{{ message }}</div>
+      {% endif %}
+
+      <!-- Loader -->
+      <div class="loader" id="loader"></div>
+
+      <!-- Resultado -->
+      {% if image_url %}
+      <div class="result-card" id="resultCard">
+          <img src="{{ image_url }}" alt="{{ query }}">
+          <p>{{ query }}</p>
+      </div>
+      {% endif %}
+  </div>
+
+
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
