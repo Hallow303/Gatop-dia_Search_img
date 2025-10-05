@@ -3,7 +3,7 @@
 > "Porque toda busca merece um miado."
 
 Gatopedia é um mini projeto divertido feito com **Flask**, inspirado na interface do **Google**, mas com um toque felino 🐈.
-O usuário digita um termo e o site retorna uma imagem relacionada vinda da **Unsplash API**. Caso algo dê errado, um adorável **Gato 500** aparece para animar o erro.
+O usuário digita um termo e o site retorna uma imagem relacionada vinda da **Unsplash API**. Caso algo dê errado, um adorável **Gato 500** aparece para animar o erro.  
 🌐 **Teste online:** [gatopedia.hallowp.xyz](https://gatopedia.hallowp.xyz/)
 ---
 
@@ -135,4 +135,5 @@ Desenvolvido com ❤️ e 😺 por **Hallow**
 <p align="center">
   <b>🐈‍⬛ Gatopedia — simples, elegante e cheio de miados!</b>
 </p>
+
 
